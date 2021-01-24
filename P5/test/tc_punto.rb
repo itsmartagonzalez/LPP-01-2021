@@ -18,7 +18,12 @@ class TestPunto < Test::Unit::TestCase
     end
 
     def test_type_check
-       assert_raise(ArgumentError){Punto.new()} 
+        #si se cambia assert_raise por assert_nothing_raised efectivamente da error ya que lo hemos forzado
+        assert_raise(ArgumentError){Punto.new()} 
+        assert_raise(RuntimeError) do
+            c = Punto.new('1', '1')
+            raise 'algo falló'
+       end
     end
 
 end
