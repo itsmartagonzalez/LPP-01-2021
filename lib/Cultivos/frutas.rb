@@ -12,4 +12,8 @@ class Frutas
       return "Nombre: #{@name}\nEmisiones de gases de efecto invernadero: #{@co2}\nTerreno utilizado: #{@m2}\nPrecio de venta: #{@pvp}\nCoste de producción: #{@coste}"
     end
 
+    def diferencia
+      return @coste - @pvp
+    end
+
 end

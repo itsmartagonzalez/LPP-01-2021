@@ -35,6 +35,10 @@ RSpec.describe Cultivos do
             expect(@lechuga.to_s).to eq("Nombre: Lechuga\nEmisiones de gases de efecto invernadero: 0.5\nTerreno utilizado: 30.0\nPrecio de venta: 1.2\nCoste de producción: 0.1")
         end
 
+        it "Un método que devuelva la diferencia entre el coste de producción y el precio de venta del mismo" do
+            expect(@lechuga.diferencia).to eq(-1.0999999999999999)
+        end
+
     end
 
 end
