@@ -1,0 +1,11 @@
+task :default => :tu
+
+desc "Pruebas Unitarias de la clase Punto"
+task :tu do
+    sh "ruby -I. test/tc_punto.rb"
+end
+
+desc "Pruebas simples"
+task :simple do
+    sh "ruby -I. test/tc_punto.rb -n /simple/"
+end
