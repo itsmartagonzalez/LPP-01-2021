@@ -12,6 +12,8 @@ class TestPunto < Test::Unit::TestCase
 
     def test_simple
         assert_not_nil(@punto)
+        assert_equal(@punto.x, 1)
+        assert_equal(@punto.y, 0)
     end
 
 end
