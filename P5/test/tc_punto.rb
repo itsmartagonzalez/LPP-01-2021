@@ -14,6 +14,7 @@ class TestPunto < Test::Unit::TestCase
         assert_not_nil(@punto)
         assert_equal(@punto.x, 1)
         assert_equal(@punto.y, 0)
+        assert_equal(@punto.to_s, "(1, 0)")
     end
 
 end
