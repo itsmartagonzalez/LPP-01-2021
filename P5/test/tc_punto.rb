@@ -17,4 +17,8 @@ class TestPunto < Test::Unit::TestCase
         assert_equal(@punto.to_s, "(1, 0)")
     end
 
+    def test_type_check
+       assert_raise(ArgumentError){Punto.new()} 
+    end
+
 end
